@@ -479,10 +479,11 @@ var GameLayer = cc.Layer.extend({
 	},		
 	onFBClick: function() {	
 		var score = b2.getUserScore(),
+			duckurl = 'http://tomin.github.com/duck/',
 			title = encodeURIComponent("神送我" + score + "顆鑽石！"),
-			link = encodeURIComponent(this.url),
+			link = encodeURIComponent(duckurl),
 			summary = encodeURIComponent('「燒毀！斷開魂結！斷開鎖鍊！」盡在可爆鴨！'),
-			img = encodeURIComponent(this.url + "images/diamond" + score + ".jpg"),
+			img = encodeURIComponent(duckurl + "images/diamond" + score + ".jpg"),
 			url = 'http://www.facebook.com/sharer.php?s=100&p[title]='+ title + '&p[summary]=' + summary + '&p[url]=' + link + '&p[images][0]=' + img;
 			
 		window.open(url,'sharer','toolbar=0,status=0,width=626,height=436');
