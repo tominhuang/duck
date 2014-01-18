@@ -311,11 +311,9 @@ var GameLayer = cc.Layer.extend({
         });
 		this.fireScreenSprite = this.addObject({
 			name: "fire2",
-			x: 0,
+			x: 600,
 			y: -275,
-			z: 99,
-			scaleX: 1.5,
-			scaleY: 1						
+			z: 99
 		});		
 
         this.birdSprite = this.addObject({
@@ -465,7 +463,7 @@ var GameLayer = cc.Layer.extend({
 		
 	},	
 	onFire: function() {		
-		var	firetime = 10,
+		var	firetime = 6,
 			actionRMiddle = cc.MoveBy.create(firetime, cc.p(0, 800)),				
 			walkArr = [actionRMiddle];
 			
@@ -475,7 +473,7 @@ var GameLayer = cc.Layer.extend({
 		setTimeout(function() {
 			id("container").style.display = "none";
 			id("retry").style.display = "block";
-		}, firetime * 1000);		
+		}, (firetime - 2) * 1000);		
 	},		
 	onFBClick: function() {	
 		var score = b2.getUserScore(),

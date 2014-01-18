@@ -7,7 +7,7 @@
         frameRate: 60,
         tag: 'viewport',		
         SingleEnginFile: 'cocos2dx.lib.min.js',
-        appFiles: ['resources.js', 'b2.js', 'game.js']
+        appFiles: ['resources.js', 'b2.js', 'game.min.js']
     };
     window.addEventListener('DOMContentLoaded', function () {
         var s = d.createElement('script');

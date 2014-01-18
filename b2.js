@@ -1,5 +1,3 @@
-// Author: www.mahdi7s.com
-
 var MathH = {
     clamp: function (num, min, max) {
         return Math.min(max, Math.max(num, min));
