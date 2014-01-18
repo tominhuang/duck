@@ -1,0 +1,67 @@
+* { 
+	margin:0; 
+	padding:0; 			
+}
+html, body{
+	height: 100%:
+	width: 100%;
+}
+#bill{
+	position:absolute;
+	top:15%;				
+	left:50%;
+	margin-left:-11em;				
+	z-index:5;
+	padding: 1em;
+	height: 16em;
+	width: 22em;
+	background: url("sprites/form.jpg") lightblue;
+	display: none;
+}
+#bill h1{
+	margin-bottom: 1.1em;
+}
+table{
+	width: 100%;	
+}
+table tr{
+	text-align: center;
+}
+td{
+	padding: 0.2em;
+}
+#close{
+	position:absolute;
+	top:0;
+	right:0.1em;	
+	border: 1px solid #666;
+	padding: 0.1em 0.6em;
+	font-size: 1.4em;
+	text-decoration:none;
+	color: #000;
+}
+#retry{
+	margin-top: 1em;
+	font-size: 5em;
+	text-align: center;
+	display:none;
+}
+.button {
+	display:block;
+	padding:10px;
+	margin:15px;
+	float:left;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+} 
+.facebook {
+	width:150px;
+	background:#3b5998;
+}
+#fire {
+	width:80px;
+	background:#c8232c;
+}

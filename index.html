@@ -1,0 +1,83 @@
+﻿<!DOCTYPE>
+<html>
+    <head>
+        <title>可愛爆炸小鴨(可爆鴨) Cute Bomb Duck</title>
+		<meta charset="utf-8">
+		<meta content="Duck, Bomb, Cute, Joke, Game" name="description">
+		<meta content="AngryBird, CuteDuck" name="keywords">
+		<meta content="可愛爆炸小鴨 Cute Bomb Duck" property="og:title">
+		<meta content="Duck, Bomb, Cute, Joke, Game" property="og:description">
+		<meta content="http://tomin.github.com/duck/images/screenshot.png" property="og:image">
+		<meta content="http://tomin.github.com/duck" property="og:url">		
+		<meta name="viewport" content="width=1300, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="style.min.css">			
+    </head> 
+    <body>
+		<div id="container">
+			<canvas id="viewport" height="500" width="1200">
+				<h2 style="text-align:center">請升級瀏覽器版本！</h2>
+			</canvas>
+		</div>
+		<div id="retry">
+			<a href="./index.html">再玩一次</a>				
+		</div>		
+		
+		<div id="bill">
+		  <h1>神送你 <span id="score">0</span> 顆鑽石！</h1>
+		  <a id="close" href="">X</a>
+		  
+		  <div id="tran">交易日期：<span id="date"></span></div>
+		  <table>
+			<tr>
+				<th>通行時間</th>
+				<th>通行門架</th>
+				<th>門禁牌架</th>
+			</tr>
+			<tr>
+				<td id="time"></td>
+				<td id="road"></td>
+				<td>$<span id="price"></span></td>
+			</tr>
+			<tr>
+				<td id="time2"></td>
+				<td id="road2"></td>
+				<td>$<span id="price2"></span></td>
+			</tr>	
+		  </table>
+		  
+		  <a id="fb_share" class="button facebook" href="">Facebook分享</a>
+		  <a id="fire" class="button" href="">燒毀</a>
+		</div>
+
+		<footer>
+			<span class="social-button">
+				<span class="fb-like" data-href="http://tomin.github.io/duck/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="vertical-align:top;zoom:1;*display:inline">.</span>
+			</span>		
+			
+			<span class="social-button">
+				<iframe src="http://ghbtns.com/github-btn.html?user=tomin&repo=duck&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="140" height="20"></iframe>
+			</span>	
+		</footer>
+		
+		<script type="text/javascript" src="cocos2d.js"></script>
+		<div id="fb-root"></div>
+		<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1388106518114621";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		
+
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-46902119-2', 'tomin.github.io');
+		ga('send', 'pageview');	
+		</script>		
+    </body>
+</html>
