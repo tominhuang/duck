@@ -109,8 +109,6 @@ var GameLayer = cc.Layer.extend({
         var platformSprite = this.addObject({
             name: "platform",
             y: 30,
-
-            scaleY: 1,
             anchor: cc.p(0, 0),
             type: "static",
             shape: "box",
@@ -271,11 +269,9 @@ var GameLayer = cc.Layer.extend({
 				actionRight = cc.MoveBy.create(splitTime, cc.p(path, 0)),
 				actionLeft = cc.MoveBy.create(splitTime, cc.p(-path, 0)),
 				walkArr = [actionRight, actionLeft];
-			
-			//pandaSprite.runAction(actionBy);			
+					
 			pandaSprite.runAction(cc.Sequence.create(walkArr));			
 			setTimeout(pandaWalk, time * 1000);
-
 			
 			//change skins		
 			for(var i=0; i<= time * 2; i++) {
