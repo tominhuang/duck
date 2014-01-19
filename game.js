@@ -48,7 +48,6 @@ var GameLayer = cc.Layer.extend({
     },
     smokeDistance: 16,
     menus: [],
-	url: 'http://tomin.github.com/duck/',
     lastSmoke: null,
     slingRubber1: null,
     slingRubber2: null,
@@ -345,7 +344,7 @@ var GameLayer = cc.Layer.extend({
             backMenu = new CMenu(this.getTexture("menu_back"));
 			backMenu.setPosition(cc.p(margin, winSize.height - margin));
 			backMenu.onClick(function () {
-            window.location.href = this.url;
+            window.location.href = 'http://github.com/tomin/duck/';
         });
         this.addChild(backMenu);
         this.menus.push(backMenu);
